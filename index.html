@@ -7,5 +7,43 @@
 </head>
 <body>
     
+        <section id="proyectos" class="seccion proyectos">
+            <h2>Sección de Proyectos</h2>
+            <div class="proyectos-grid">
+                <article class="proyecto-card">
+                    <h3>Proyecto 1: Flujo Colaborativo Git</h3>
+                    <p>Implementación de control de versiones utilizando ramas, pull requests y code reviews.</p>
+                </article>
+                <article class="proyecto-card">
+                    <h3>Proyecto 2: Sitio Web Responsive</h3>
+                    <p>Maquetación semántica en HTML y CSS con diseño adaptable a dispositivos móviles.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion contacto">
+            <h2>Contacto</h2>
+            <form class="form-contacto" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" placeholder="ejemplo@espe.edu.ec" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Universidad de las Fuerzas Armadas ESPE. Todos los derechos reservados.</p>
+        <p>Desarrollado por: Kevin, David y Andrea</p>
+    </footer>
 </body>
 </html>
