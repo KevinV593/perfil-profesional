@@ -78,6 +78,111 @@ body {
     color: #1b4332;
 }
 
+/*Estilos del perfil*/
+.seccion.perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.seccion-titulo-container h2 {
+    color: #1b4332;
+    margin-bottom: 0.3rem;
+}
+
+.subtitulo-seccion {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.perfil-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+
+.perfil-figura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+.avatar-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2d6a4f;
+}
+
+.perfil-figura figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 500;
+    text-align: center;
+}
+
+.perfil-contenido {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.perfil-titulo {
+    font-size: 1.2rem;
+    color: #1b4332;
+}
+
+.perfil-contenido p {
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.competencias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.competencia-categoria {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.competencia-categoria h4 {
+    color: #2d6a4f;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.competencia-categoria ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.competencia-categoria li {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/*Estilos del proyectos, contactos, footer*/
 .proyectos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -102,7 +207,8 @@ body {
     flex-direction: column;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
